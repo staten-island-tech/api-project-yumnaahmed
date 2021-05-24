@@ -21,10 +21,18 @@ const query = async function () {
   }
 };
 
-DOMSelectors.contentArea.innerHTML = "";
-    const searchTerm = data.data[0].searchTerm_name;
-    const city = data.data[0].city_code;
-    const state = data.data[0].state;
-    console.log(searchTerm, city, state);
+// DOMSelectors.contentArea.innerHTML = "";
+//     const searchTerm = data.data[0].searchTerm_name;
+//     const city = data.data[0].city_code;
+//     const state = data.data[0].state;
+//     console.log(searchTerm, city, state);
+
+    letkeywArr = [];
+    const addKeyword = function (){
+      addKeyword.forEach((element) => {
+        /* if(addKeyword.) */
+      };)
+
+    }
 
 init();
