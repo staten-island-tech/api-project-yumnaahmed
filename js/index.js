@@ -1,5 +1,11 @@
 import { DOMSelectors } from "./DOM";
 
+
+
+const init = function () {
+  let searchTerm;
+  // const apiKey =(insert key);
+
 const query = async function () {
   try {
     const response = await fetch(
@@ -17,5 +23,11 @@ const query = async function () {
     alert("Hey, try another keyword");
   }
 };
+
+DOMSelectors.contentArea.innerHTML = "";
+    const searchTerm = data.data[0].searchTerm_name;
+    const city = data.data[0].city_code;
+    const state = data.data[0].state;
+    console.log(searchTerm, city, state);
 
 init();
