@@ -12,7 +12,7 @@ const query = async function () {
     console.log(data);
   } catch (error) {
     console.log(error);
-    alert("Hey something went wrong");
+    alert("Hey, try another keyword");
   }
 };
 

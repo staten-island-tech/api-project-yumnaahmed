@@ -1,5 +1,5 @@
 const DOMSelectors = {
-  zipcodeInput: document.getElementById("findZipcode"),
+  keywordInput: document.getElementById("findKeyword"),
   submitBtn: document.getElementById("submitBtn"),
   contentArea: document.getElementById("content"),
 };
