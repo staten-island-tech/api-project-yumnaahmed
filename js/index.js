@@ -1,7 +1,5 @@
 import { DOMSelectors } from "./DOM";
 
-
-
 const init = function () {
   let searchTerm;
   // const apiKey =(insert key);
@@ -17,7 +15,6 @@ const query = async function () {
         "beforeend,/* work on html bro */"
       ); /*method of the Element interface parses the specified text as HTML and inserts the resulting nodes into the DOM tree at a specified position */
     });
-    console.log(data);
   } catch (error) {
     console.log(error);
     alert("Hey, try another keyword");
