@@ -2,7 +2,9 @@ import { DOMSelectors } from "./DOM";
 
 const query = async function () {
   try {
-    const response = await fetch(/* insert API key here */);
+    const response = await fetch(
+      `http:data.orghunter.com/v1/charitysearch?user_key=yourKey&${searchTerm}=treasure%20coast%20humane`
+    );
     const data = await response.json();
     data.results.forEach((charity) => {
       DOMSelectors.grid.insertAdjacentHTML(
