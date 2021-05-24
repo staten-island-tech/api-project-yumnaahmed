@@ -1,3 +1,5 @@
+import { DOMSelectors } from "./DOM";
+
 const query = async function () {
   try {
     const response = await fetch(/* insert API key here */);
@@ -13,3 +15,5 @@ const query = async function () {
     alert("Hey something went wrong");
   }
 };
+
+init();
