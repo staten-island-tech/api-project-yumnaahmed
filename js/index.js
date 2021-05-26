@@ -7,7 +7,7 @@ const init = function () {
 const query = async function () {
   try {
     const response = await fetch(
-      `https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400`
+      `https://api.sunrise-sunset.org/json?${lat&lng}`
     );
     const data = await response.json();
     data.results.forEach((charity) => {
