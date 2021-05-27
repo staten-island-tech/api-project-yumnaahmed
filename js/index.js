@@ -1,4 +1,5 @@
-import { DOMSelectors } from "DOM";
+import { DOMSelectors } from "./DOM";
+
 let location = "lat,lng";
 const query = async function () {
   try {
@@ -6,7 +7,14 @@ const query = async function () {
       `https://api.sunrise-sunset.org/json?lat=90&lng=45`
     );
     const data = await response.json();
-    console.log(data);
+    console.log(data.results.sunset);
+    DOMSelectors.sunData.insertAdjacentHTML(
+      "beforeend",
+      `<div class="location">
+        <h3 class="sunrise">${data.results.sunrise}</h3>
+        <h4 class="sunset">Written By: ${data.results.sunset}</h4>
+        `
+    );
   } catch (error) {
     console.log(error);
     alert("Hey, try new coordinates");
