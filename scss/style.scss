@@ -1,4 +1,4 @@
-@use "search.scss";
+@use "main.scss"
 $font-main: "Asap", sans-serif;
 $font-second: "Josefin Slab", serif;
 html,
@@ -17,7 +17,6 @@ body {
 
 .header {
   font-size: 5.2rem;
-
   margin: 3rem auto;
   text-align: center;
 }
@@ -25,4 +24,9 @@ body {
   margin: 1rem auto 2rem auto;
   text-align: center;
   font-size: 3.8rem;
+}
+.pic {
+  text-align: center;
+  margin: 1rem auto 2rem auto;
+  size: 1rem;
 }
