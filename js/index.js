@@ -1,4 +1,4 @@
-/* import { DOMSelectors } from "./DOM"; */
+// import { DOMSelectors } from "js/DOM";
 
 const query = async function () {
   try {
