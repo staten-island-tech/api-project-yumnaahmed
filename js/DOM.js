@@ -1,7 +1,7 @@
 const DOMSelectors = {
-  timeInput: document.getElementById("findTime"),
-  submitBtn: document.getElementById("submitBtn"),
-  contentArea: document.getElementById("content"),
+  locationInput: document.getElementById("search-area"),
+  submitBtn: document.getElementById("submit-button"),
+  contentArea: document.getElementById("search-form"),
 };
 
 export { DOMSelectors };

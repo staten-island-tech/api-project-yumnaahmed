@@ -1,5 +1,5 @@
-// import { DOMSelectors } from "js/DOM";
-
+import { DOMSelectors } from ".DOM";
+let location = "lat,lng";
 const query = async function () {
   try {
   } catch (error) {
@@ -10,3 +10,24 @@ const query = async function () {
     `https://api.sunrise-sunset.org/json?${lat}${lng}`
   );
 };
+const data = await response.json();
+console.log(data);
+data.results.forEach((location) => {
+  console.log(location);
+});
+// const displayData = function (data) {
+//   DOMSelectors.contentArea.innerHTML = "";
+//   const latitude= data.data[0].lat_location;
+//   const longitude= data.data[0].lng_location;
+//   console.log(lat,lng);
+
+data.results.forEach((location) => {
+  DOMSelectors.grid.insertAdjacentHTML(
+    "beforeend",
+    `<div class="location">
+      <h3 class="sunrise">${sunrise}</h3>
+      <h4 class="sunset">Written By: ${sunset}</h4>
+      `
+  );
+});
+query();
