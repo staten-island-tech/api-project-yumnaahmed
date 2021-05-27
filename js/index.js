@@ -9,11 +9,11 @@ const query = async function () {
     data.results.array.forEach((location) => {
       let locationArr= [];
       const addlocation = function () {
-        location.forEach((element) => {
-          if(DeviceMotionEvent.genre_ids.includes(element.id))
-        })
+      //   location.forEach((element) => {
+      //     if(DeviceMotionEvent.genre_ids.includes(element.id))
+      //   })
 
-      }
+      // }
       DOMSelectors.contentArea.innerHTML = "";
       const latitude = data.data[0].latitude;
       const longitude = data.data[0].longitude;
