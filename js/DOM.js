@@ -1,5 +1,5 @@
 const DOMSelectors = {
-  keywordInput: document.getElementById("findKeyword"),
+  timeInput: document.getElementById("findTime"),
   submitBtn: document.getElementById("submitBtn"),
   contentArea: document.getElementById("content"),
 };
