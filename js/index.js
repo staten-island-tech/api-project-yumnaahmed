@@ -7,7 +7,7 @@ const init = function () {
 const query = async function () {
   try {
     const response = await fetch(
-      `http:data.orghunter.com/v1/charitysearch?user_key=yourKey&${searchTerm}=treasure%20coast%20humane`
+      `https://api.sunrise-sunset.org/json?${lat&lng}` 
     );
     const data = await response.json();
     data.results.forEach((charity) => {
@@ -17,7 +17,7 @@ const query = async function () {
     });
   } catch (error) {
     console.log(error);
-    alert("Hey, try another keyword");
+    alert("Hey,the sunrise and sunset for this area isn't available");
   }
 };
 
