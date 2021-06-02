@@ -1,11 +1,9 @@
-import { DOMSelectors } from "./DOM";
+import { DOMSelectors } from "/DOM";
 
-let location = "lat,lng";
+let location = "lat";
 const query = async function () {
   try {
-    const response = await fetch(
-      `https://api.sunrise-sunset.org/json?lat=90&lng=45`
-    );
+    const response = await fetch(`https://api.sunrise-sunset.org/json?lat=90`);
     const data = await response.json();
     console.log(data.results.sunset);
     DOMSelectors.sunData.insertAdjacentHTML(
