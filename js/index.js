@@ -4,7 +4,7 @@ let location = "lat";
 const query = async function () {
   try {
     const response = await fetch(
-      `https://api.sunrise-sunset.org/json?${lat}&${lng}`
+      `https://api.sunrise-sunset.org/json?lat=90&lng=50`
     );
     const data = await response.json();
     console.log(data);
