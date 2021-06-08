@@ -27,6 +27,10 @@ const listen = function () {
   DOMSelectors.contentArea.addEventListener("submit", function (e) {
     e.preventDefault();
     const searchParams = DOMSelectors.locationInput.value;
+    DOMSelectors.sunData.innerHTML = "";
+    const lat = data.data[0].latitude;
+    const lng = data.data[0].longitude;
+    console.log(lat, lng);
     //remove old html here using innerHTML =""", simply figure out where your JS  inserts the HTML and instead of insert, just do innerHTML = ""
     const query = async function () {
       try {
